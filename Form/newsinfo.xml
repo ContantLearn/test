@@ -1,0 +1,103 @@
+﻿<webframes>
+	<table>
+		<url type="string" value="getNewsinfoList.action"></url>
+		<dlgHeight type="string" value="250"></dlgHeight>
+        <!--<dlgPage type="string" value="../pages/newsinfo/newsinfoDlg.jsp"></dlgPage> -->
+		<addAction type="string" value="saveOrUpdateNewsinfo.action"></addAction>
+		<columns type="list">
+              <column>
+                <field value="newsinfoid"></field>
+                <title value="NEWSINFOID"></title>
+                 <isSearchKey value="1"></isSearchKey>
+              </column>
+              <column>
+                <field value="newstypeid"></field>
+                <title value="NEWSTYPEID"></title>
+                <useToDialog type="object">
+					<tagName value="input"></tagName>				
+				</useToDialog>
+              </column>
+              <column>
+                <field value="newstitle"></field>
+                <title value="资讯标题"></title>
+                <useToDialog type="object">
+					<tagName value="input"></tagName>				
+				</useToDialog>
+              </column>
+              <column>
+                <field value="pubdate"></field>
+                <title value="发布时间"></title>
+                <useToDialog type="object">
+					<tagName value="input"></tagName>				
+				</useToDialog>
+              </column>
+              <column>
+                <field value="pubman"></field>
+                <title value="发布人"></title>
+                <useToDialog type="object">
+					<tagName value="input"></tagName>				
+				</useToDialog>
+              </column>
+              <column>
+                <field value="newscontent"></field>
+                <title value="咨询类容"></title>
+                <useToDialog type="object">
+					<tagName value="input"></tagName>				
+				</useToDialog>
+              </column>
+              <column>
+                <field value="imgurl"></field>
+                <title value="图片地址"></title>
+                <useToDialog type="object">
+					<tagName value="input"></tagName>				
+				</useToDialog>
+              </column>
+              <column>
+                <field value="linkurl"></field>
+                <title value="链接地址"></title>
+                <useToDialog type="object">
+					<tagName value="input"></tagName>				
+				</useToDialog>
+              </column>
+       </columns>
+       <addTools type="list">
+			<addTool>
+				<type value="searchBtn"></type>          	    
+                 <selectOpts type="list">
+					<selectOpt>
+						<text value="NEWSINFOID"></text>
+						<val value="newsinfoid"></val>
+					</selectOpt>
+					<selectOpt>
+						<text value="NEWSTYPEID"></text>
+						<val value="newstypeid"></val>
+					</selectOpt>
+					<selectOpt>
+						<text value="资讯标题"></text>
+						<val value="newstitle"></val>
+					</selectOpt>
+					<selectOpt>
+						<text value="发布时间"></text>
+						<val value="pubdate"></val>
+					</selectOpt>
+					<selectOpt>
+						<text value="发布人"></text>
+						<val value="pubman"></val>
+					</selectOpt>
+					<selectOpt>
+						<text value="咨询类容"></text>
+						<val value="newscontent"></val>
+					</selectOpt>
+					<selectOpt>
+						<text value="图片地址"></text>
+						<val value="imgurl"></val>
+					</selectOpt>
+					<selectOpt>
+						<text value="链接地址"></text>
+						<val value="linkurl"></val>
+					</selectOpt>
+         		</selectOpts>
+			</addTool>
+		</addTools>
+	</table>
+</webframes>

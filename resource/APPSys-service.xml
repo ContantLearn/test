@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+	<bean id="approvalformService" class="com.APPSys.service.impl.ApprovalformServiceImpl" autowire="byName">
+		<property name="commonDao" ref="approvalformDao"></property>
+	</bean>
+	<bean id="arcboxService" class="com.APPSys.service.impl.ArcboxServiceImpl" autowire="byName">
+		<property name="commonDao" ref="arcboxDao"></property>
+	</bean>
+	<bean id="arccatalogService" class="com.APPSys.service.impl.ArccatalogServiceImpl" autowire="byName">
+		<property name="commonDao" ref="arccatalogDao"></property>
+	</bean>
+	<bean id="archiveitemService" class="com.APPSys.service.impl.ArchiveitemServiceImpl" autowire="byName">
+		<property name="commonDao" ref="archiveitemDao"></property>
+	</bean>
+	<bean id="arclendingService" class="com.APPSys.service.impl.ArclendingServiceImpl" autowire="byName">
+		<property name="commonDao" ref="arclendingDao"></property>
+	</bean>
+	<bean id="arcrackService" class="com.APPSys.service.impl.ArcrackServiceImpl" autowire="byName">
+		<property name="commonDao" ref="arcrackDao"></property>
+	</bean>
+	<bean id="arcrangeService" class="com.APPSys.service.impl.ArcrangeServiceImpl" autowire="byName">
+		<property name="commonDao" ref="arcrangeDao"></property>
+	</bean>
+	<bean id="arcroomService" class="com.APPSys.service.impl.ArcroomServiceImpl" autowire="byName">
+		<property name="commonDao" ref="arcroomDao"></property>
+	</bean>
+	<bean id="arctradetailService" class="com.APPSys.service.impl.ArctradetailServiceImpl" autowire="byName">
+		<property name="commonDao" ref="arctradetailDao"></property>
+	</bean>
+	<bean id="arctransferService" class="com.APPSys.service.impl.ArctransferServiceImpl" autowire="byName">
+		<property name="commonDao" ref="arctransferDao"></property>
+	</bean>
+	<bean id="arctypeService" class="com.APPSys.service.impl.ArctypeServiceImpl" autowire="byName">
+		<property name="commonDao" ref="arctypeDao"></property>
+	</bean>
+	<bean id="bldchangeinfoService" class="com.APPSys.service.impl.BldchangeinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="bldchangeinfoDao"></property>
+	</bean>
+	<bean id="boundarymarkService" class="com.APPSys.service.impl.BoundarymarkServiceImpl" autowire="byName">
+		<property name="commonDao" ref="boundarymarkDao"></property>
+	</bean>
+	<bean id="boundarynoteService" class="com.APPSys.service.impl.BoundarynoteServiceImpl" autowire="byName">
+		<property name="commonDao" ref="boundarynoteDao"></property>
+	</bean>
+	<bean id="boundarysignService" class="com.APPSys.service.impl.BoundarysignServiceImpl" autowire="byName">
+		<property name="commonDao" ref="boundarysignDao"></property>
+	</bean>
+	<bean id="buildingService" class="com.APPSys.service.impl.BuildingServiceImpl" autowire="byName">
+		<property name="commonDao" ref="buildingDao"></property>
+	</bean>
+	<bean id="busdictcodeService" class="com.APPSys.service.impl.BusdictcodeServiceImpl" autowire="byName">
+		<property name="commonDao" ref="busdictcodeDao"></property>
+	</bean>
+	<bean id="cardregisterService" class="com.APPSys.service.impl.CardregisterServiceImpl" autowire="byName">
+		<property name="commonDao" ref="cardregisterDao"></property>
+	</bean>
+	<bean id="certificateService" class="com.APPSys.service.impl.CertificateServiceImpl" autowire="byName">
+		<property name="commonDao" ref="certificateDao"></property>
+	</bean>
+	<bean id="claareasurveryService" class="com.APPSys.service.impl.ClaareasurveryServiceImpl" autowire="byName">
+		<property name="commonDao" ref="claareasurveryDao"></property>
+	</bean>
+	<bean id="dissentinfoService" class="com.APPSys.service.impl.DissentinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="dissentinfoDao"></property>
+	</bean>
+	<bean id="easementinfoService" class="com.APPSys.service.impl.EasementinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="easementinfoDao"></property>
+	</bean>
+	<bean id="familymemberService" class="com.APPSys.service.impl.FamilymemberServiceImpl" autowire="byName">
+		<property name="commonDao" ref="familymemberDao"></property>
+	</bean>
+	<bean id="farmconuseinfoService" class="com.APPSys.service.impl.FarmconuseinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="farmconuseinfoDao"></property>
+	</bean>
+	<bean id="farmusesurveryService" class="com.APPSys.service.impl.FarmusesurveryServiceImpl" autowire="byName">
+		<property name="commonDao" ref="farmusesurveryDao"></property>
+	</bean>
+	<bean id="feedetailService" class="com.APPSys.service.impl.FeedetailServiceImpl" autowire="byName">
+		<property name="commonDao" ref="feedetailDao"></property>
+	</bean>
+	<bean id="forestbaseService" class="com.APPSys.service.impl.ForestbaseServiceImpl" autowire="byName">
+		<property name="commonDao" ref="forestbaseDao"></property>
+	</bean>
+	<bean id="forestchangeinfoService" class="com.APPSys.service.impl.ForestchangeinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="forestchangeinfoDao"></property>
+	</bean>
+	<bean id="forestinfoService" class="com.APPSys.service.impl.ForestinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="forestinfoDao"></property>
+	</bean>
+	<bean id="forestsurveryService" class="com.APPSys.service.impl.ForestsurveryServiceImpl" autowire="byName">
+		<property name="commonDao" ref="forestsurveryDao"></property>
+	</bean>
+	<bean id="grantcardService" class="com.APPSys.service.impl.GrantcardServiceImpl" autowire="byName">
+		<property name="commonDao" ref="grantcardDao"></property>
+	</bean>
+	<bean id="houseapartmentinfoService" class="com.APPSys.service.impl.HouseapartmentinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="houseapartmentinfoDao"></property>
+	</bean>
+	<bean id="housebuildinginfoService" class="com.APPSys.service.impl.HousebuildinginfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="housebuildinginfoDao"></property>
+	</bean>
+	<bean id="housedetailsService" class="com.APPSys.service.impl.HousedetailsServiceImpl" autowire="byName">
+		<property name="commonDao" ref="housedetailsDao"></property>
+	</bean>
+	<bean id="housefloorService" class="com.APPSys.service.impl.HousefloorServiceImpl" autowire="byName">
+		<property name="commonDao" ref="housefloorDao"></property>
+	</bean>
+	<bean id="houseprjbldinfoService" class="com.APPSys.service.impl.HouseprjbldinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="houseprjbldinfoDao"></property>
+	</bean>
+	<bean id="housereginfoattestService" class="com.APPSys.service.impl.HousereginfoattestServiceImpl" autowire="byName">
+		<property name="commonDao" ref="housereginfoattestDao"></property>
+	</bean>
+	<bean id="houseroomService" class="com.APPSys.service.impl.HouseroomServiceImpl" autowire="byName">
+		<property name="commonDao" ref="houseroomDao"></property>
+	</bean>
+	<bean id="housesurveryService" class="com.APPSys.service.impl.HousesurveryServiceImpl" autowire="byName">
+		<property name="commonDao" ref="housesurveryDao"></property>
+	</bean>
+	<bean id="inquiriesformService" class="com.APPSys.service.impl.InquiriesformServiceImpl" autowire="byName">
+		<property name="commonDao" ref="inquiriesformDao"></property>
+	</bean>
+	<bean id="islandcoordinateService" class="com.APPSys.service.impl.IslandcoordinateServiceImpl" autowire="byName">
+		<property name="commonDao" ref="islandcoordinateDao"></property>
+	</bean>
+	<bean id="landblockService" class="com.APPSys.service.impl.LandblockServiceImpl" autowire="byName">
+		<property name="commonDao" ref="landblockDao"></property>
+	</bean>
+	<bean id="landchangeinfoService" class="com.APPSys.service.impl.LandchangeinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="landchangeinfoDao"></property>
+	</bean>
+	<bean id="landownerinfoService" class="com.APPSys.service.impl.LandownerinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="landownerinfoDao"></property>
+	</bean>
+	<bean id="landseaService" class="com.APPSys.service.impl.LandseaServiceImpl" autowire="byName">
+		<property name="commonDao" ref="landseaDao"></property>
+	</bean>
+	<bean id="landsurveryService" class="com.APPSys.service.impl.LandsurveryServiceImpl" autowire="byName">
+		<property name="commonDao" ref="landsurveryDao"></property>
+	</bean>
+	<bean id="landuseinfoService" class="com.APPSys.service.impl.LanduseinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="landuseinfoDao"></property>
+	</bean>
+	<bean id="layerfieldService" class="com.APPSys.service.impl.LayerfieldServiceImpl" autowire="byName">
+		<property name="commonDao" ref="layerfieldDao"></property>
+	</bean>
+	<bean id="layerfldtypeService" class="com.APPSys.service.impl.LayerfldtypeServiceImpl" autowire="byName">
+		<property name="commonDao" ref="layerfldtypeDao"></property>
+	</bean>
+	<bean id="layertypeService" class="com.APPSys.service.impl.LayertypeServiceImpl" autowire="byName">
+		<property name="commonDao" ref="layertypeDao"></property>
+	</bean>
+	<bean id="lbusedetailService" class="com.APPSys.service.impl.LbusedetailServiceImpl" autowire="byName">
+		<property name="commonDao" ref="lbusedetailDao"></property>
+	</bean>
+	<bean id="limitinfoService" class="com.APPSys.service.impl.LimitinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="limitinfoDao"></property>
+	</bean>
+	<bean id="mainlayerService" class="com.APPSys.service.impl.MainlayerServiceImpl" autowire="byName">
+		<property name="commonDao" ref="mainlayerDao"></property>
+	</bean>
+	<bean id="maintenanceService" class="com.APPSys.service.impl.MaintenanceServiceImpl" autowire="byName">
+		<property name="commonDao" ref="maintenanceDao"></property>
+	</bean>
+	<bean id="maintenance_printService" class="com.APPSys.service.impl.Maintenance_printServiceImpl" autowire="byName">
+		<property name="commonDao" ref="maintenance_printDao"></property>
+	</bean>
+	<bean id="midlayerService" class="com.APPSys.service.impl.MidlayerServiceImpl" autowire="byName">
+		<property name="commonDao" ref="midlayerDao"></property>
+	</bean>
+	<bean id="newsinfoService" class="com.APPSys.service.impl.NewsinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="newsinfoDao"></property>
+	</bean>
+	<bean id="newstypeService" class="com.APPSys.service.impl.NewstypeServiceImpl" autowire="byName">
+		<property name="commonDao" ref="newstypeDao"></property>
+	</bean>
+	<bean id="otherrightinfoService" class="com.APPSys.service.impl.OtherrightinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="otherrightinfoDao"></property>
+	</bean>
+	<bean id="oweandcerchangeService" class="com.APPSys.service.impl.OweandcerchangeServiceImpl" autowire="byName">
+		<property name="commonDao" ref="oweandcerchangeDao"></property>
+	</bean>
+	<bean id="ownandcaseService" class="com.APPSys.service.impl.OwnandcaseServiceImpl" autowire="byName">
+		<property name="commonDao" ref="ownandcaseDao"></property>
+	</bean>
+	<bean id="ownandforestsurService" class="com.APPSys.service.impl.OwnandforestsurServiceImpl" autowire="byName">
+		<property name="commonDao" ref="ownandforestsurDao"></property>
+	</bean>
+	<bean id="ownandhousesurService" class="com.APPSys.service.impl.OwnandhousesurServiceImpl" autowire="byName">
+		<property name="commonDao" ref="ownandhousesurDao"></property>
+	</bean>
+	<bean id="ownandlandsurService" class="com.APPSys.service.impl.OwnandlandsurServiceImpl" autowire="byName">
+		<property name="commonDao" ref="ownandlandsurDao"></property>
+	</bean>
+	<bean id="ownandstrsurService" class="com.APPSys.service.impl.OwnandstrsurServiceImpl" autowire="byName">
+		<property name="commonDao" ref="ownandstrsurDao"></property>
+	</bean>
+	<bean id="ownersService" class="com.APPSys.service.impl.OwnersServiceImpl" autowire="byName">
+		<property name="commonDao" ref="ownersDao"></property>
+	</bean>
+	<bean id="ownproandcaseService" class="com.APPSys.service.impl.OwnproandcaseServiceImpl" autowire="byName">
+		<property name="commonDao" ref="ownproandcaseDao"></property>
+	</bean>
+	<bean id="pledgeinfoService" class="com.APPSys.service.impl.PledgeinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="pledgeinfoDao"></property>
+	</bean>
+	<bean id="prereginfoService" class="com.APPSys.service.impl.PrereginfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="prereginfoDao"></property>
+	</bean>
+	<bean id="procprojectService" class="com.APPSys.service.impl.ProcprojectServiceImpl" autowire="byName">
+		<property name="commonDao" ref="procprojectDao"></property>
+	</bean>
+	<bean id="pubareashareService" class="com.APPSys.service.impl.PubareashareServiceImpl" autowire="byName">
+		<property name="commonDao" ref="pubareashareDao"></property>
+	</bean>
+	<bean id="pubbldsurveryService" class="com.APPSys.service.impl.PubbldsurveryServiceImpl" autowire="byName">
+		<property name="commonDao" ref="pubbldsurveryDao"></property>
+	</bean>
+	<bean id="publicbuindinginfoService" class="com.APPSys.service.impl.PublicbuindinginfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="publicbuindinginfoDao"></property>
+	</bean>
+	<bean id="realestatebookService" class="com.APPSys.service.impl.RealestatebookServiceImpl" autowire="byName">
+		<property name="commonDao" ref="realestatebookDao"></property>
+	</bean>
+	<bean id="realestatecardService" class="com.APPSys.service.impl.RealestatecardServiceImpl" autowire="byName">
+		<property name="commonDao" ref="realestatecardDao"></property>
+	</bean>
+	<bean id="realestateproofService" class="com.APPSys.service.impl.RealestateproofServiceImpl" autowire="byName">
+		<property name="commonDao" ref="realestateproofDao"></property>
+	</bean>
+	<bean id="realestaterightService" class="com.APPSys.service.impl.RealestaterightServiceImpl" autowire="byName">
+		<property name="commonDao" ref="realestaterightDao"></property>
+	</bean>
+	<bean id="realestateunitService" class="com.APPSys.service.impl.RealestateunitServiceImpl" autowire="byName">
+		<property name="commonDao" ref="realestateunitDao"></property>
+	</bean>
+	<bean id="realnumtempService" class="com.APPSys.service.impl.RealnumtempServiceImpl" autowire="byName">
+		<property name="commonDao" ref="realnumtempDao"></property>
+	</bean>
+	<bean id="recandappformService" class="com.APPSys.service.impl.RecandappformServiceImpl" autowire="byName">
+		<property name="commonDao" ref="recandappformDao"></property>
+	</bean>
+	<bean id="recdataService" class="com.APPSys.service.impl.RecdataServiceImpl" autowire="byName">
+		<property name="commonDao" ref="recdataDao"></property>
+	</bean>
+	<bean id="recfeeformService" class="com.APPSys.service.impl.RecfeeformServiceImpl" autowire="byName">
+		<property name="commonDao" ref="recfeeformDao"></property>
+	</bean>
+	<bean id="regbooklistService" class="com.APPSys.service.impl.RegbooklistServiceImpl" autowire="byName">
+		<property name="commonDao" ref="regbooklistDao"></property>
+	</bean>
+	<bean id="regioncodeService" class="com.APPSys.service.impl.RegioncodeServiceImpl" autowire="byName">
+		<property name="commonDao" ref="regioncodeDao"></property>
+	</bean>
+	<bean id="reuandcaseService" class="com.APPSys.service.impl.ReuandcaseServiceImpl" autowire="byName">
+		<property name="commonDao" ref="reuandcaseDao"></property>
+	</bean>
+	<bean id="roomchangeinfoService" class="com.APPSys.service.impl.RoomchangeinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="roomchangeinfoDao"></property>
+	</bean>
+	<bean id="seachangeinfoService" class="com.APPSys.service.impl.SeachangeinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="seachangeinfoDao"></property>
+	</bean>
+	<bean id="sealupinfoService" class="com.APPSys.service.impl.SealupinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="sealupinfoDao"></property>
+	</bean>
+	<bean id="seauseinfoService" class="com.APPSys.service.impl.SeauseinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="seauseinfoDao"></property>
+	</bean>
+	<bean id="struownerinfoService" class="com.APPSys.service.impl.StruownerinfoServiceImpl" autowire="byName">
+		<property name="commonDao" ref="struownerinfoDao"></property>
+	</bean>
+	<bean id="strusurveryService" class="com.APPSys.service.impl.StrusurveryServiceImpl" autowire="byName">
+		<property name="commonDao" ref="strusurveryDao"></property>
+	</bean>
+	<bean id="sublayerService" class="com.APPSys.service.impl.SublayerServiceImpl" autowire="byName">
+		<property name="commonDao" ref="sublayerDao"></property>
+	</bean>
+	<bean id="subregcodeService" class="com.APPSys.service.impl.SubregcodeServiceImpl" autowire="byName">
+		<property name="commonDao" ref="subregcodeDao"></property>
+	</bean>
+	<bean id="surapprovalService" class="com.APPSys.service.impl.SurapprovalServiceImpl" autowire="byName">
+		<property name="commonDao" ref="surapprovalDao"></property>
+	</bean>
+	<bean id="useseastatusService" class="com.APPSys.service.impl.UseseastatusServiceImpl" autowire="byName">
+		<property name="commonDao" ref="useseastatusDao"></property>
+	</bean>
+</beans>
+

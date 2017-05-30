@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.APPSys.dao.impl.NewstypeDaoImpl">
+	<resultMap id="BaseResultMap" type="newstype">
+           <id column="NEWSTYPEID" property="newstypeid" jdbcType="VARCHAR" />		
+         <result column="PAR_NEWSTYPEID" property="par_newstypeid" jdbcType="VARCHAR" />		 
+         <result column="NEWSTYPENAME" property="newstypename" jdbcType="VARCHAR" />		 
+         <result column="NEWSTYPEDESC" property="newstypedesc" jdbcType="VARCHAR" />		 
+	</resultMap>
+    
+	<select id="selectObj" parameterType="java.lang.String"
+		resultMap="BaseResultMap">
+		SELECT * FROM NEWSTYPE WHERE NEWSTYPEID=#{newstypeid}
+  </select>
+
+	<select id="selectAll" resultMap="BaseResultMap">
+		SELECT * FROM NEWSTYPE
+  </select>
+
+	<select id="selectList" resultMap="BaseResultMap">
+		SELECT * FROM NEWSTYPE ${where} ${sort}
+	</select>
+
+	<select id="selectCount" resultType="int">
+		SELECT COUNT(*) FROM NEWSTYPE ${where} ${sort}
+	</select>
+
+	<!-- 查询（参数） -->
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="BaseResultMap">
+		SELECT * FROM NEWSTYPE
+		<where>
+			<if test="NEWSTYPEID != null"> NEWSTYPEID=#{NEWSTYPEID}</if>
+		</where>
+		<if test="sort != null">
+			${sort}
+			</if>
+	</select>
+
+	<insert id="insertObj" parameterType="NEWSTYPE">
+		<selectKey resultType="java.lang.String" order="BEFORE"
+			keyProperty="newstypeid">
+			select sys_guid() from dual
+  		</selectKey>
+		insert into FEEDETAIL 
+        (
+        NEWSTYPEID,
+        PAR_NEWSTYPEID,
+        NEWSTYPENAME,
+        NEWSTYPEDESC,
+        NEWSTYPEDESC
+      )
+		values (
+        #{newstypeid,jdbcType=VARCHAR},       
+        #{par_newstypeid,jdbcType=VARCHAR},       
+        #{newstypename,jdbcType=VARCHAR},       
+        #{newstypedesc,jdbcType=VARCHAR},       
+        #{newstypedesc,jdbcType=VARCHAR}
+        )
+  </insert>
+
+	<update id="updateObj" parameterType="NEWSTYPE">
+		update NEWSTYPE
+		set 
+           NEWSTYPEID = #{newstypeid,jdbcType=VARCHAR},      
+           PAR_NEWSTYPEID = #{par_newstypeid,jdbcType=VARCHAR},      
+           NEWSTYPENAME = #{newstypename,jdbcType=VARCHAR},      
+           NEWSTYPEDESC = #{newstypedesc,jdbcType=VARCHAR},      
+           NEWSTYPEDESC = #{newstypedesc,jdbcType=VARCHAR}
+		where 
+        NEWSTYPEID = #{newstypeid,jdbcType=VARCHAR}
+  </update>
+
+	<delete id="deleteObj" parameterType="String">
+		DELETE FEEDETAIL WHERE NEWSTYPEID=#{newstypeid}  
+	</delete>
+</mapper>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties>
+		<property name="dialect" value="oracle"/>
+	</properties>
+	<settings><setting name="logImpl" value="LOG4J"/></settings>
+	<typeAliases>
+	 <typeAlias type="com.APPSys.model.Approvalform" alias="approvalform" />
+	 <typeAlias type="com.APPSys.model.Arcbox" alias="arcbox" />
+	 <typeAlias type="com.APPSys.model.Arccatalog" alias="arccatalog" />
+	 <typeAlias type="com.APPSys.model.Archiveitem" alias="archiveitem" />
+	 <typeAlias type="com.APPSys.model.Arclending" alias="arclending" />
+	 <typeAlias type="com.APPSys.model.Arcrack" alias="arcrack" />
+	 <typeAlias type="com.APPSys.model.Arcrange" alias="arcrange" />
+	 <typeAlias type="com.APPSys.model.Arcroom" alias="arcroom" />
+	 <typeAlias type="com.APPSys.model.Arctradetail" alias="arctradetail" />
+	 <typeAlias type="com.APPSys.model.Arctransfer" alias="arctransfer" />
+	 <typeAlias type="com.APPSys.model.Arctype" alias="arctype" />
+	 <typeAlias type="com.APPSys.model.Bldchangeinfo" alias="bldchangeinfo" />
+	 <typeAlias type="com.APPSys.model.Boundarymark" alias="boundarymark" />
+	 <typeAlias type="com.APPSys.model.Boundarynote" alias="boundarynote" />
+	 <typeAlias type="com.APPSys.model.Boundarysign" alias="boundarysign" />
+	 <typeAlias type="com.APPSys.model.Building" alias="building" />
+	 <typeAlias type="com.APPSys.model.Busdictcode" alias="busdictcode" />
+	 <typeAlias type="com.APPSys.model.Cardregister" alias="cardregister" />
+	 <typeAlias type="com.APPSys.model.Certificate" alias="certificate" />
+	 <typeAlias type="com.APPSys.model.Claareasurvery" alias="claareasurvery" />
+	 <typeAlias type="com.APPSys.model.Dissentinfo" alias="dissentinfo" />
+	 <typeAlias type="com.APPSys.model.Easementinfo" alias="easementinfo" />
+	 <typeAlias type="com.APPSys.model.Familymember" alias="familymember" />
+	 <typeAlias type="com.APPSys.model.Farmconuseinfo" alias="farmconuseinfo" />
+	 <typeAlias type="com.APPSys.model.Farmusesurvery" alias="farmusesurvery" />
+	 <typeAlias type="com.APPSys.model.Feedetail" alias="feedetail" />
+	 <typeAlias type="com.APPSys.model.Forestbase" alias="forestbase" />
+	 <typeAlias type="com.APPSys.model.Forestchangeinfo" alias="forestchangeinfo" />
+	 <typeAlias type="com.APPSys.model.Forestinfo" alias="forestinfo" />
+	 <typeAlias type="com.APPSys.model.Forestsurvery" alias="forestsurvery" />
+	 <typeAlias type="com.APPSys.model.Grantcard" alias="grantcard" />
+	 <typeAlias type="com.APPSys.model.Houseapartmentinfo" alias="houseapartmentinfo" />
+	 <typeAlias type="com.APPSys.model.Housebuildinginfo" alias="housebuildinginfo" />
+	 <typeAlias type="com.APPSys.model.Housedetails" alias="housedetails" />
+	 <typeAlias type="com.APPSys.model.Housefloor" alias="housefloor" />
+	 <typeAlias type="com.APPSys.model.Houseprjbldinfo" alias="houseprjbldinfo" />
+	 <typeAlias type="com.APPSys.model.Housereginfoattest" alias="housereginfoattest" />
+	 <typeAlias type="com.APPSys.model.Houseroom" alias="houseroom" />
+	 <typeAlias type="com.APPSys.model.Housesurvery" alias="housesurvery" />
+	 <typeAlias type="com.APPSys.model.Inquiriesform" alias="inquiriesform" />
+	 <typeAlias type="com.APPSys.model.Islandcoordinate" alias="islandcoordinate" />
+	 <typeAlias type="com.APPSys.model.Landblock" alias="landblock" />
+	 <typeAlias type="com.APPSys.model.Landchangeinfo" alias="landchangeinfo" />
+	 <typeAlias type="com.APPSys.model.Landownerinfo" alias="landownerinfo" />
+	 <typeAlias type="com.APPSys.model.Landsea" alias="landsea" />
+	 <typeAlias type="com.APPSys.model.Landsurvery" alias="landsurvery" />
+	 <typeAlias type="com.APPSys.model.Landuseinfo" alias="landuseinfo" />
+	 <typeAlias type="com.APPSys.model.Layerfield" alias="layerfield" />
+	 <typeAlias type="com.APPSys.model.Layerfldtype" alias="layerfldtype" />
+	 <typeAlias type="com.APPSys.model.Layertype" alias="layertype" />
+	 <typeAlias type="com.APPSys.model.Lbusedetail" alias="lbusedetail" />
+	 <typeAlias type="com.APPSys.model.Limitinfo" alias="limitinfo" />
+	 <typeAlias type="com.APPSys.model.Mainlayer" alias="mainlayer" />
+	 <typeAlias type="com.APPSys.model.Maintenance" alias="maintenance" />
+	 <typeAlias type="com.APPSys.model.Maintenance_print" alias="maintenance_print" />
+	 <typeAlias type="com.APPSys.model.Midlayer" alias="midlayer" />
+	 <typeAlias type="com.APPSys.model.Newsinfo" alias="newsinfo" />
+	 <typeAlias type="com.APPSys.model.Newstype" alias="newstype" />
+	 <typeAlias type="com.APPSys.model.Otherrightinfo" alias="otherrightinfo" />
+	 <typeAlias type="com.APPSys.model.Oweandcerchange" alias="oweandcerchange" />
+	 <typeAlias type="com.APPSys.model.Ownandcase" alias="ownandcase" />
+	 <typeAlias type="com.APPSys.model.Ownandforestsur" alias="ownandforestsur" />
+	 <typeAlias type="com.APPSys.model.Ownandhousesur" alias="ownandhousesur" />
+	 <typeAlias type="com.APPSys.model.Ownandlandsur" alias="ownandlandsur" />
+	 <typeAlias type="com.APPSys.model.Ownandstrsur" alias="ownandstrsur" />
+	 <typeAlias type="com.APPSys.model.Owners" alias="owners" />
+	 <typeAlias type="com.APPSys.model.Ownproandcase" alias="ownproandcase" />
+	 <typeAlias type="com.APPSys.model.Pledgeinfo" alias="pledgeinfo" />
+	 <typeAlias type="com.APPSys.model.Prereginfo" alias="prereginfo" />
+	 <typeAlias type="com.APPSys.model.Procproject" alias="procproject" />
+	 <typeAlias type="com.APPSys.model.Pubareashare" alias="pubareashare" />
+	 <typeAlias type="com.APPSys.model.Pubbldsurvery" alias="pubbldsurvery" />
+	 <typeAlias type="com.APPSys.model.Publicbuindinginfo" alias="publicbuindinginfo" />
+	 <typeAlias type="com.APPSys.model.Realestatebook" alias="realestatebook" />
+	 <typeAlias type="com.APPSys.model.Realestatecard" alias="realestatecard" />
+	 <typeAlias type="com.APPSys.model.Realestateproof" alias="realestateproof" />
+	 <typeAlias type="com.APPSys.model.Realestateright" alias="realestateright" />
+	 <typeAlias type="com.APPSys.model.Realestateunit" alias="realestateunit" />
+	 <typeAlias type="com.APPSys.model.Realnumtemp" alias="realnumtemp" />
+	 <typeAlias type="com.APPSys.model.Recandappform" alias="recandappform" />
+	 <typeAlias type="com.APPSys.model.Recdata" alias="recdata" />
+	 <typeAlias type="com.APPSys.model.Recfeeform" alias="recfeeform" />
+	 <typeAlias type="com.APPSys.model.Regbooklist" alias="regbooklist" />
+	 <typeAlias type="com.APPSys.model.Regioncode" alias="regioncode" />
+	 <typeAlias type="com.APPSys.model.Reuandcase" alias="reuandcase" />
+	 <typeAlias type="com.APPSys.model.Roomchangeinfo" alias="roomchangeinfo" />
+	 <typeAlias type="com.APPSys.model.Seachangeinfo" alias="seachangeinfo" />
+	 <typeAlias type="com.APPSys.model.Sealupinfo" alias="sealupinfo" />
+	 <typeAlias type="com.APPSys.model.Seauseinfo" alias="seauseinfo" />
+	 <typeAlias type="com.APPSys.model.Struownerinfo" alias="struownerinfo" />
+	 <typeAlias type="com.APPSys.model.Strusurvery" alias="strusurvery" />
+	 <typeAlias type="com.APPSys.model.Sublayer" alias="sublayer" />
+	 <typeAlias type="com.APPSys.model.Subregcode" alias="subregcode" />
+	 <typeAlias type="com.APPSys.model.Surapproval" alias="surapproval" />
+	 <typeAlias type="com.APPSys.model.Useseastatus" alias="useseastatus" />
+     	</typeAliases>
+	 <plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="dialect" value="oracle"/>
+        </plugin>
+    </plugins>
+	<mappers>
+	 <mapper resource="config/mybatis/Approvalform.xml"/>
+	 <mapper resource="config/mybatis/Arcbox.xml"/>
+	 <mapper resource="config/mybatis/Arccatalog.xml"/>
+	 <mapper resource="config/mybatis/Archiveitem.xml"/>
+	 <mapper resource="config/mybatis/Arclending.xml"/>
+	 <mapper resource="config/mybatis/Arcrack.xml"/>
+	 <mapper resource="config/mybatis/Arcrange.xml"/>
+	 <mapper resource="config/mybatis/Arcroom.xml"/>
+	 <mapper resource="config/mybatis/Arctradetail.xml"/>
+	 <mapper resource="config/mybatis/Arctransfer.xml"/>
+	 <mapper resource="config/mybatis/Arctype.xml"/>
+	 <mapper resource="config/mybatis/Bldchangeinfo.xml"/>
+	 <mapper resource="config/mybatis/Boundarymark.xml"/>
+	 <mapper resource="config/mybatis/Boundarynote.xml"/>
+	 <mapper resource="config/mybatis/Boundarysign.xml"/>
+	 <mapper resource="config/mybatis/Building.xml"/>
+	 <mapper resource="config/mybatis/Busdictcode.xml"/>
+	 <mapper resource="config/mybatis/Cardregister.xml"/>
+	 <mapper resource="config/mybatis/Certificate.xml"/>
+	 <mapper resource="config/mybatis/Claareasurvery.xml"/>
+	 <mapper resource="config/mybatis/Dissentinfo.xml"/>
+	 <mapper resource="config/mybatis/Easementinfo.xml"/>
+	 <mapper resource="config/mybatis/Familymember.xml"/>
+	 <mapper resource="config/mybatis/Farmconuseinfo.xml"/>
+	 <mapper resource="config/mybatis/Farmusesurvery.xml"/>
+	 <mapper resource="config/mybatis/Feedetail.xml"/>
+	 <mapper resource="config/mybatis/Forestbase.xml"/>
+	 <mapper resource="config/mybatis/Forestchangeinfo.xml"/>
+	 <mapper resource="config/mybatis/Forestinfo.xml"/>
+	 <mapper resource="config/mybatis/Forestsurvery.xml"/>
+	 <mapper resource="config/mybatis/Grantcard.xml"/>
+	 <mapper resource="config/mybatis/Houseapartmentinfo.xml"/>
+	 <mapper resource="config/mybatis/Housebuildinginfo.xml"/>
+	 <mapper resource="config/mybatis/Housedetails.xml"/>
+	 <mapper resource="config/mybatis/Housefloor.xml"/>
+	 <mapper resource="config/mybatis/Houseprjbldinfo.xml"/>
+	 <mapper resource="config/mybatis/Housereginfoattest.xml"/>
+	 <mapper resource="config/mybatis/Houseroom.xml"/>
+	 <mapper resource="config/mybatis/Housesurvery.xml"/>
+	 <mapper resource="config/mybatis/Inquiriesform.xml"/>
+	 <mapper resource="config/mybatis/Islandcoordinate.xml"/>
+	 <mapper resource="config/mybatis/Landblock.xml"/>
+	 <mapper resource="config/mybatis/Landchangeinfo.xml"/>
+	 <mapper resource="config/mybatis/Landownerinfo.xml"/>
+	 <mapper resource="config/mybatis/Landsea.xml"/>
+	 <mapper resource="config/mybatis/Landsurvery.xml"/>
+	 <mapper resource="config/mybatis/Landuseinfo.xml"/>
+	 <mapper resource="config/mybatis/Layerfield.xml"/>
+	 <mapper resource="config/mybatis/Layerfldtype.xml"/>
+	 <mapper resource="config/mybatis/Layertype.xml"/>
+	 <mapper resource="config/mybatis/Lbusedetail.xml"/>
+	 <mapper resource="config/mybatis/Limitinfo.xml"/>
+	 <mapper resource="config/mybatis/Mainlayer.xml"/>
+	 <mapper resource="config/mybatis/Maintenance.xml"/>
+	 <mapper resource="config/mybatis/Maintenance_print.xml"/>
+	 <mapper resource="config/mybatis/Midlayer.xml"/>
+	 <mapper resource="config/mybatis/Newsinfo.xml"/>
+	 <mapper resource="config/mybatis/Newstype.xml"/>
+	 <mapper resource="config/mybatis/Otherrightinfo.xml"/>
+	 <mapper resource="config/mybatis/Oweandcerchange.xml"/>
+	 <mapper resource="config/mybatis/Ownandcase.xml"/>
+	 <mapper resource="config/mybatis/Ownandforestsur.xml"/>
+	 <mapper resource="config/mybatis/Ownandhousesur.xml"/>
+	 <mapper resource="config/mybatis/Ownandlandsur.xml"/>
+	 <mapper resource="config/mybatis/Ownandstrsur.xml"/>
+	 <mapper resource="config/mybatis/Owners.xml"/>
+	 <mapper resource="config/mybatis/Ownproandcase.xml"/>
+	 <mapper resource="config/mybatis/Pledgeinfo.xml"/>
+	 <mapper resource="config/mybatis/Prereginfo.xml"/>
+	 <mapper resource="config/mybatis/Procproject.xml"/>
+	 <mapper resource="config/mybatis/Pubareashare.xml"/>
+	 <mapper resource="config/mybatis/Pubbldsurvery.xml"/>
+	 <mapper resource="config/mybatis/Publicbuindinginfo.xml"/>
+	 <mapper resource="config/mybatis/Realestatebook.xml"/>
+	 <mapper resource="config/mybatis/Realestatecard.xml"/>
+	 <mapper resource="config/mybatis/Realestateproof.xml"/>
+	 <mapper resource="config/mybatis/Realestateright.xml"/>
+	 <mapper resource="config/mybatis/Realestateunit.xml"/>
+	 <mapper resource="config/mybatis/Realnumtemp.xml"/>
+	 <mapper resource="config/mybatis/Recandappform.xml"/>
+	 <mapper resource="config/mybatis/Recdata.xml"/>
+	 <mapper resource="config/mybatis/Recfeeform.xml"/>
+	 <mapper resource="config/mybatis/Regbooklist.xml"/>
+	 <mapper resource="config/mybatis/Regioncode.xml"/>
+	 <mapper resource="config/mybatis/Reuandcase.xml"/>
+	 <mapper resource="config/mybatis/Roomchangeinfo.xml"/>
+	 <mapper resource="config/mybatis/Seachangeinfo.xml"/>
+	 <mapper resource="config/mybatis/Sealupinfo.xml"/>
+	 <mapper resource="config/mybatis/Seauseinfo.xml"/>
+	 <mapper resource="config/mybatis/Struownerinfo.xml"/>
+	 <mapper resource="config/mybatis/Strusurvery.xml"/>
+	 <mapper resource="config/mybatis/Sublayer.xml"/>
+	 <mapper resource="config/mybatis/Subregcode.xml"/>
+	 <mapper resource="config/mybatis/Surapproval.xml"/>
+	 <mapper resource="config/mybatis/Useseastatus.xml"/>
+    </mappers> 
+</configuration>

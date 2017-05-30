@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:aop="http://www.springframework.org/schema/aop"
+		xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+	<bean id="approvalformDao" class="com.APPSys.dao.impl.ApprovalformDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="arcboxDao" class="com.APPSys.dao.impl.ArcboxDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="arccatalogDao" class="com.APPSys.dao.impl.ArccatalogDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="archiveitemDao" class="com.APPSys.dao.impl.ArchiveitemDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="arclendingDao" class="com.APPSys.dao.impl.ArclendingDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="arcrackDao" class="com.APPSys.dao.impl.ArcrackDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="arcrangeDao" class="com.APPSys.dao.impl.ArcrangeDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="arcroomDao" class="com.APPSys.dao.impl.ArcroomDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="arctradetailDao" class="com.APPSys.dao.impl.ArctradetailDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="arctransferDao" class="com.APPSys.dao.impl.ArctransferDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="arctypeDao" class="com.APPSys.dao.impl.ArctypeDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="bldchangeinfoDao" class="com.APPSys.dao.impl.BldchangeinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="boundarymarkDao" class="com.APPSys.dao.impl.BoundarymarkDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="boundarynoteDao" class="com.APPSys.dao.impl.BoundarynoteDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="boundarysignDao" class="com.APPSys.dao.impl.BoundarysignDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="buildingDao" class="com.APPSys.dao.impl.BuildingDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="busdictcodeDao" class="com.APPSys.dao.impl.BusdictcodeDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="cardregisterDao" class="com.APPSys.dao.impl.CardregisterDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="certificateDao" class="com.APPSys.dao.impl.CertificateDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="claareasurveryDao" class="com.APPSys.dao.impl.ClaareasurveryDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="dissentinfoDao" class="com.APPSys.dao.impl.DissentinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="easementinfoDao" class="com.APPSys.dao.impl.EasementinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="familymemberDao" class="com.APPSys.dao.impl.FamilymemberDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="farmconuseinfoDao" class="com.APPSys.dao.impl.FarmconuseinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="farmusesurveryDao" class="com.APPSys.dao.impl.FarmusesurveryDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="feedetailDao" class="com.APPSys.dao.impl.FeedetailDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="forestbaseDao" class="com.APPSys.dao.impl.ForestbaseDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="forestchangeinfoDao" class="com.APPSys.dao.impl.ForestchangeinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="forestinfoDao" class="com.APPSys.dao.impl.ForestinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="forestsurveryDao" class="com.APPSys.dao.impl.ForestsurveryDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="grantcardDao" class="com.APPSys.dao.impl.GrantcardDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="houseapartmentinfoDao" class="com.APPSys.dao.impl.HouseapartmentinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="housebuildinginfoDao" class="com.APPSys.dao.impl.HousebuildinginfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="housedetailsDao" class="com.APPSys.dao.impl.HousedetailsDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="housefloorDao" class="com.APPSys.dao.impl.HousefloorDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="houseprjbldinfoDao" class="com.APPSys.dao.impl.HouseprjbldinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="housereginfoattestDao" class="com.APPSys.dao.impl.HousereginfoattestDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="houseroomDao" class="com.APPSys.dao.impl.HouseroomDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="housesurveryDao" class="com.APPSys.dao.impl.HousesurveryDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="inquiriesformDao" class="com.APPSys.dao.impl.InquiriesformDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="islandcoordinateDao" class="com.APPSys.dao.impl.IslandcoordinateDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="landblockDao" class="com.APPSys.dao.impl.LandblockDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="landchangeinfoDao" class="com.APPSys.dao.impl.LandchangeinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="landownerinfoDao" class="com.APPSys.dao.impl.LandownerinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="landseaDao" class="com.APPSys.dao.impl.LandseaDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="landsurveryDao" class="com.APPSys.dao.impl.LandsurveryDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="landuseinfoDao" class="com.APPSys.dao.impl.LanduseinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="layerfieldDao" class="com.APPSys.dao.impl.LayerfieldDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="layerfldtypeDao" class="com.APPSys.dao.impl.LayerfldtypeDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="layertypeDao" class="com.APPSys.dao.impl.LayertypeDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="lbusedetailDao" class="com.APPSys.dao.impl.LbusedetailDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="limitinfoDao" class="com.APPSys.dao.impl.LimitinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="mainlayerDao" class="com.APPSys.dao.impl.MainlayerDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="maintenanceDao" class="com.APPSys.dao.impl.MaintenanceDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="maintenance_printDao" class="com.APPSys.dao.impl.Maintenance_printDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="midlayerDao" class="com.APPSys.dao.impl.MidlayerDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="newsinfoDao" class="com.APPSys.dao.impl.NewsinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="newstypeDao" class="com.APPSys.dao.impl.NewstypeDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="otherrightinfoDao" class="com.APPSys.dao.impl.OtherrightinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="oweandcerchangeDao" class="com.APPSys.dao.impl.OweandcerchangeDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="ownandcaseDao" class="com.APPSys.dao.impl.OwnandcaseDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="ownandforestsurDao" class="com.APPSys.dao.impl.OwnandforestsurDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="ownandhousesurDao" class="com.APPSys.dao.impl.OwnandhousesurDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="ownandlandsurDao" class="com.APPSys.dao.impl.OwnandlandsurDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="ownandstrsurDao" class="com.APPSys.dao.impl.OwnandstrsurDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="ownersDao" class="com.APPSys.dao.impl.OwnersDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="ownproandcaseDao" class="com.APPSys.dao.impl.OwnproandcaseDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="pledgeinfoDao" class="com.APPSys.dao.impl.PledgeinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="prereginfoDao" class="com.APPSys.dao.impl.PrereginfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="procprojectDao" class="com.APPSys.dao.impl.ProcprojectDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="pubareashareDao" class="com.APPSys.dao.impl.PubareashareDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="pubbldsurveryDao" class="com.APPSys.dao.impl.PubbldsurveryDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="publicbuindinginfoDao" class="com.APPSys.dao.impl.PublicbuindinginfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="realestatebookDao" class="com.APPSys.dao.impl.RealestatebookDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="realestatecardDao" class="com.APPSys.dao.impl.RealestatecardDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="realestateproofDao" class="com.APPSys.dao.impl.RealestateproofDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="realestaterightDao" class="com.APPSys.dao.impl.RealestaterightDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="realestateunitDao" class="com.APPSys.dao.impl.RealestateunitDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="realnumtempDao" class="com.APPSys.dao.impl.RealnumtempDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="recandappformDao" class="com.APPSys.dao.impl.RecandappformDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="recdataDao" class="com.APPSys.dao.impl.RecdataDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="recfeeformDao" class="com.APPSys.dao.impl.RecfeeformDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="regbooklistDao" class="com.APPSys.dao.impl.RegbooklistDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="regioncodeDao" class="com.APPSys.dao.impl.RegioncodeDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="reuandcaseDao" class="com.APPSys.dao.impl.ReuandcaseDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="roomchangeinfoDao" class="com.APPSys.dao.impl.RoomchangeinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="seachangeinfoDao" class="com.APPSys.dao.impl.SeachangeinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="sealupinfoDao" class="com.APPSys.dao.impl.SealupinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="seauseinfoDao" class="com.APPSys.dao.impl.SeauseinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="struownerinfoDao" class="com.APPSys.dao.impl.StruownerinfoDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="strusurveryDao" class="com.APPSys.dao.impl.StrusurveryDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="sublayerDao" class="com.APPSys.dao.impl.SublayerDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="subregcodeDao" class="com.APPSys.dao.impl.SubregcodeDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="surapprovalDao" class="com.APPSys.dao.impl.SurapprovalDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+	<bean id="useseastatusDao" class="com.APPSys.dao.impl.UseseastatusDaoImpl">  
+		<property name="sqlSessionTemplate" ref="sqlSession" />
+ 	</bean>
+</beans>
+

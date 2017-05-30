@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.APPSys.dao.impl.NewsinfoDaoImpl">
+	<resultMap id="BaseResultMap" type="newsinfo">
+           <id column="NEWSINFOID" property="newsinfoid" jdbcType="VARCHAR" />		
+         <result column="NEWSTYPEID" property="newstypeid" jdbcType="VARCHAR" />		 
+         <result column="NEWSTITLE" property="newstitle" jdbcType="VARCHAR" />		 
+         <result column="PUBDATE" property="pubdate" jdbcType="DATE" />		 
+         <result column="PUBMAN" property="pubman" jdbcType="VARCHAR" />		 
+         <result column="NEWSCONTENT" property="newscontent" jdbcType="Byte[]" />		 
+         <result column="IMGURL" property="imgurl" jdbcType="VARCHAR" />		 
+         <result column="LINKURL" property="linkurl" jdbcType="VARCHAR" />		 
+	</resultMap>
+    
+	<select id="selectObj" parameterType="java.lang.String"
+		resultMap="BaseResultMap">
+		SELECT * FROM NEWSINFO WHERE NEWSINFOID=#{newsinfoid}
+  </select>
+
+	<select id="selectAll" resultMap="BaseResultMap">
+		SELECT * FROM NEWSINFO
+  </select>
+
+	<select id="selectList" resultMap="BaseResultMap">
+		SELECT * FROM NEWSINFO ${where} ${sort}
+	</select>
+
+	<select id="selectCount" resultType="int">
+		SELECT COUNT(*) FROM NEWSINFO ${where} ${sort}
+	</select>
+
+	<!-- 查询（参数） -->
+	<select id="selectParam" parameterType="java.util.Map"
+		resultMap="BaseResultMap">
+		SELECT * FROM NEWSINFO
+		<where>
+			<if test="NEWSINFOID != null"> NEWSINFOID=#{NEWSINFOID}</if>
+		</where>
+		<if test="sort != null">
+			${sort}
+			</if>
+	</select>
+
+	<insert id="insertObj" parameterType="NEWSINFO">
+		<selectKey resultType="java.lang.String" order="BEFORE"
+			keyProperty="newsinfoid">
+			select sys_guid() from dual
+  		</selectKey>
+		insert into FEEDETAIL 
+        (
+        NEWSINFOID,
+        NEWSTYPEID,
+        NEWSTITLE,
+        PUBDATE,
+        PUBMAN,
+        NEWSCONTENT,
+        IMGURL,
+        LINKURL,
+        LINKURL
+      )
+		values (
+        #{newsinfoid,jdbcType=VARCHAR},       
+        #{newstypeid,jdbcType=VARCHAR},       
+        #{newstitle,jdbcType=VARCHAR},       
+        #{pubdate,jdbcType=DATE},       
+        #{pubman,jdbcType=VARCHAR},       
+        #{newscontent,jdbcType=byte[]},       
+        #{imgurl,jdbcType=VARCHAR},       
+        #{linkurl,jdbcType=VARCHAR},       
+        #{linkurl,jdbcType=VARCHAR}
+        )
+  </insert>
+
+	<update id="updateObj" parameterType="NEWSINFO">
+		update NEWSINFO
+		set 
+           NEWSINFOID = #{newsinfoid,jdbcType=VARCHAR},      
+           NEWSTYPEID = #{newstypeid,jdbcType=VARCHAR},      
+           NEWSTITLE = #{newstitle,jdbcType=VARCHAR},      
+           PUBDATE = #{pubdate,jdbcType=DATE},      
+           PUBMAN = #{pubman,jdbcType=VARCHAR},      
+           NEWSCONTENT = #{newscontent,jdbcType=byte[]},      
+           IMGURL = #{imgurl,jdbcType=VARCHAR},      
+           LINKURL = #{linkurl,jdbcType=VARCHAR},      
+           LINKURL = #{linkurl,jdbcType=VARCHAR}
+		where 
+        NEWSINFOID = #{newsinfoid,jdbcType=VARCHAR}
+  </update>
+
+	<delete id="deleteObj" parameterType="String">
+		DELETE FEEDETAIL WHERE NEWSINFOID=#{newsinfoid}  
+	</delete>
+</mapper>

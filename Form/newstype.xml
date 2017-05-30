@@ -1,0 +1,59 @@
+﻿<webframes>
+	<table>
+		<url type="string" value="getNewstypeList.action"></url>
+		<dlgHeight type="string" value="250"></dlgHeight>
+        <!--<dlgPage type="string" value="../pages/newstype/newstypeDlg.jsp"></dlgPage> -->
+		<addAction type="string" value="saveOrUpdateNewstype.action"></addAction>
+		<columns type="list">
+              <column>
+                <field value="newstypeid"></field>
+                <title value="NEWSTYPEID"></title>
+                 <isSearchKey value="1"></isSearchKey>
+              </column>
+              <column>
+                <field value="par_newstypeid"></field>
+                <title value="咨询类上级类型"></title>
+                <useToDialog type="object">
+					<tagName value="input"></tagName>				
+				</useToDialog>
+              </column>
+              <column>
+                <field value="newstypename"></field>
+                <title value="咨询类名称"></title>
+                <useToDialog type="object">
+					<tagName value="input"></tagName>				
+				</useToDialog>
+              </column>
+              <column>
+                <field value="newstypedesc"></field>
+                <title value="咨询类描述"></title>
+                <useToDialog type="object">
+					<tagName value="input"></tagName>				
+				</useToDialog>
+              </column>
+       </columns>
+       <addTools type="list">
+			<addTool>
+				<type value="searchBtn"></type>          	    
+                 <selectOpts type="list">
+					<selectOpt>
+						<text value="NEWSTYPEID"></text>
+						<val value="newstypeid"></val>
+					</selectOpt>
+					<selectOpt>
+						<text value="咨询类上级类型"></text>
+						<val value="par_newstypeid"></val>
+					</selectOpt>
+					<selectOpt>
+						<text value="咨询类名称"></text>
+						<val value="newstypename"></val>
+					</selectOpt>
+					<selectOpt>
+						<text value="咨询类描述"></text>
+						<val value="newstypedesc"></val>
+					</selectOpt>
+         		</selectOpts>
+			</addTool>
+		</addTools>
+	</table>
+</webframes>

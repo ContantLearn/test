@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+    <bean id="approvalformAction" class="com.APPSys.action.ApprovalformAction"
+		scope="prototype">
+		<property name="commonService" ref="approvalformService"></property>
+		<property name="approvalformService" ref="approvalformService"></property>
+	</bean>
+    <bean id="arcboxAction" class="com.APPSys.action.ArcboxAction"
+		scope="prototype">
+		<property name="commonService" ref="arcboxService"></property>
+		<property name="arcboxService" ref="arcboxService"></property>
+	</bean>
+    <bean id="arccatalogAction" class="com.APPSys.action.ArccatalogAction"
+		scope="prototype">
+		<property name="commonService" ref="arccatalogService"></property>
+		<property name="arccatalogService" ref="arccatalogService"></property>
+	</bean>
+    <bean id="archiveitemAction" class="com.APPSys.action.ArchiveitemAction"
+		scope="prototype">
+		<property name="commonService" ref="archiveitemService"></property>
+		<property name="archiveitemService" ref="archiveitemService"></property>
+	</bean>
+    <bean id="arclendingAction" class="com.APPSys.action.ArclendingAction"
+		scope="prototype">
+		<property name="commonService" ref="arclendingService"></property>
+		<property name="arclendingService" ref="arclendingService"></property>
+	</bean>
+    <bean id="arcrackAction" class="com.APPSys.action.ArcrackAction"
+		scope="prototype">
+		<property name="commonService" ref="arcrackService"></property>
+		<property name="arcrackService" ref="arcrackService"></property>
+	</bean>
+    <bean id="arcrangeAction" class="com.APPSys.action.ArcrangeAction"
+		scope="prototype">
+		<property name="commonService" ref="arcrangeService"></property>
+		<property name="arcrangeService" ref="arcrangeService"></property>
+	</bean>
+    <bean id="arcroomAction" class="com.APPSys.action.ArcroomAction"
+		scope="prototype">
+		<property name="commonService" ref="arcroomService"></property>
+		<property name="arcroomService" ref="arcroomService"></property>
+	</bean>
+    <bean id="arctradetailAction" class="com.APPSys.action.ArctradetailAction"
+		scope="prototype">
+		<property name="commonService" ref="arctradetailService"></property>
+		<property name="arctradetailService" ref="arctradetailService"></property>
+	</bean>
+    <bean id="arctransferAction" class="com.APPSys.action.ArctransferAction"
+		scope="prototype">
+		<property name="commonService" ref="arctransferService"></property>
+		<property name="arctransferService" ref="arctransferService"></property>
+	</bean>
+    <bean id="arctypeAction" class="com.APPSys.action.ArctypeAction"
+		scope="prototype">
+		<property name="commonService" ref="arctypeService"></property>
+		<property name="arctypeService" ref="arctypeService"></property>
+	</bean>
+    <bean id="bldchangeinfoAction" class="com.APPSys.action.BldchangeinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="bldchangeinfoService"></property>
+		<property name="bldchangeinfoService" ref="bldchangeinfoService"></property>
+	</bean>
+    <bean id="boundarymarkAction" class="com.APPSys.action.BoundarymarkAction"
+		scope="prototype">
+		<property name="commonService" ref="boundarymarkService"></property>
+		<property name="boundarymarkService" ref="boundarymarkService"></property>
+	</bean>
+    <bean id="boundarynoteAction" class="com.APPSys.action.BoundarynoteAction"
+		scope="prototype">
+		<property name="commonService" ref="boundarynoteService"></property>
+		<property name="boundarynoteService" ref="boundarynoteService"></property>
+	</bean>
+    <bean id="boundarysignAction" class="com.APPSys.action.BoundarysignAction"
+		scope="prototype">
+		<property name="commonService" ref="boundarysignService"></property>
+		<property name="boundarysignService" ref="boundarysignService"></property>
+	</bean>
+    <bean id="buildingAction" class="com.APPSys.action.BuildingAction"
+		scope="prototype">
+		<property name="commonService" ref="buildingService"></property>
+		<property name="buildingService" ref="buildingService"></property>
+	</bean>
+    <bean id="busdictcodeAction" class="com.APPSys.action.BusdictcodeAction"
+		scope="prototype">
+		<property name="commonService" ref="busdictcodeService"></property>
+		<property name="busdictcodeService" ref="busdictcodeService"></property>
+	</bean>
+    <bean id="cardregisterAction" class="com.APPSys.action.CardregisterAction"
+		scope="prototype">
+		<property name="commonService" ref="cardregisterService"></property>
+		<property name="cardregisterService" ref="cardregisterService"></property>
+	</bean>
+    <bean id="certificateAction" class="com.APPSys.action.CertificateAction"
+		scope="prototype">
+		<property name="commonService" ref="certificateService"></property>
+		<property name="certificateService" ref="certificateService"></property>
+	</bean>
+    <bean id="claareasurveryAction" class="com.APPSys.action.ClaareasurveryAction"
+		scope="prototype">
+		<property name="commonService" ref="claareasurveryService"></property>
+		<property name="claareasurveryService" ref="claareasurveryService"></property>
+	</bean>
+    <bean id="dissentinfoAction" class="com.APPSys.action.DissentinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="dissentinfoService"></property>
+		<property name="dissentinfoService" ref="dissentinfoService"></property>
+	</bean>
+    <bean id="easementinfoAction" class="com.APPSys.action.EasementinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="easementinfoService"></property>
+		<property name="easementinfoService" ref="easementinfoService"></property>
+	</bean>
+    <bean id="familymemberAction" class="com.APPSys.action.FamilymemberAction"
+		scope="prototype">
+		<property name="commonService" ref="familymemberService"></property>
+		<property name="familymemberService" ref="familymemberService"></property>
+	</bean>
+    <bean id="farmconuseinfoAction" class="com.APPSys.action.FarmconuseinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="farmconuseinfoService"></property>
+		<property name="farmconuseinfoService" ref="farmconuseinfoService"></property>
+	</bean>
+    <bean id="farmusesurveryAction" class="com.APPSys.action.FarmusesurveryAction"
+		scope="prototype">
+		<property name="commonService" ref="farmusesurveryService"></property>
+		<property name="farmusesurveryService" ref="farmusesurveryService"></property>
+	</bean>
+    <bean id="feedetailAction" class="com.APPSys.action.FeedetailAction"
+		scope="prototype">
+		<property name="commonService" ref="feedetailService"></property>
+		<property name="feedetailService" ref="feedetailService"></property>
+	</bean>
+    <bean id="forestbaseAction" class="com.APPSys.action.ForestbaseAction"
+		scope="prototype">
+		<property name="commonService" ref="forestbaseService"></property>
+		<property name="forestbaseService" ref="forestbaseService"></property>
+	</bean>
+    <bean id="forestchangeinfoAction" class="com.APPSys.action.ForestchangeinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="forestchangeinfoService"></property>
+		<property name="forestchangeinfoService" ref="forestchangeinfoService"></property>
+	</bean>
+    <bean id="forestinfoAction" class="com.APPSys.action.ForestinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="forestinfoService"></property>
+		<property name="forestinfoService" ref="forestinfoService"></property>
+	</bean>
+    <bean id="forestsurveryAction" class="com.APPSys.action.ForestsurveryAction"
+		scope="prototype">
+		<property name="commonService" ref="forestsurveryService"></property>
+		<property name="forestsurveryService" ref="forestsurveryService"></property>
+	</bean>
+    <bean id="grantcardAction" class="com.APPSys.action.GrantcardAction"
+		scope="prototype">
+		<property name="commonService" ref="grantcardService"></property>
+		<property name="grantcardService" ref="grantcardService"></property>
+	</bean>
+    <bean id="houseapartmentinfoAction" class="com.APPSys.action.HouseapartmentinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="houseapartmentinfoService"></property>
+		<property name="houseapartmentinfoService" ref="houseapartmentinfoService"></property>
+	</bean>
+    <bean id="housebuildinginfoAction" class="com.APPSys.action.HousebuildinginfoAction"
+		scope="prototype">
+		<property name="commonService" ref="housebuildinginfoService"></property>
+		<property name="housebuildinginfoService" ref="housebuildinginfoService"></property>
+	</bean>
+    <bean id="housedetailsAction" class="com.APPSys.action.HousedetailsAction"
+		scope="prototype">
+		<property name="commonService" ref="housedetailsService"></property>
+		<property name="housedetailsService" ref="housedetailsService"></property>
+	</bean>
+    <bean id="housefloorAction" class="com.APPSys.action.HousefloorAction"
+		scope="prototype">
+		<property name="commonService" ref="housefloorService"></property>
+		<property name="housefloorService" ref="housefloorService"></property>
+	</bean>
+    <bean id="houseprjbldinfoAction" class="com.APPSys.action.HouseprjbldinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="houseprjbldinfoService"></property>
+		<property name="houseprjbldinfoService" ref="houseprjbldinfoService"></property>
+	</bean>
+    <bean id="housereginfoattestAction" class="com.APPSys.action.HousereginfoattestAction"
+		scope="prototype">
+		<property name="commonService" ref="housereginfoattestService"></property>
+		<property name="housereginfoattestService" ref="housereginfoattestService"></property>
+	</bean>
+    <bean id="houseroomAction" class="com.APPSys.action.HouseroomAction"
+		scope="prototype">
+		<property name="commonService" ref="houseroomService"></property>
+		<property name="houseroomService" ref="houseroomService"></property>
+	</bean>
+    <bean id="housesurveryAction" class="com.APPSys.action.HousesurveryAction"
+		scope="prototype">
+		<property name="commonService" ref="housesurveryService"></property>
+		<property name="housesurveryService" ref="housesurveryService"></property>
+	</bean>
+    <bean id="inquiriesformAction" class="com.APPSys.action.InquiriesformAction"
+		scope="prototype">
+		<property name="commonService" ref="inquiriesformService"></property>
+		<property name="inquiriesformService" ref="inquiriesformService"></property>
+	</bean>
+    <bean id="islandcoordinateAction" class="com.APPSys.action.IslandcoordinateAction"
+		scope="prototype">
+		<property name="commonService" ref="islandcoordinateService"></property>
+		<property name="islandcoordinateService" ref="islandcoordinateService"></property>
+	</bean>
+    <bean id="landblockAction" class="com.APPSys.action.LandblockAction"
+		scope="prototype">
+		<property name="commonService" ref="landblockService"></property>
+		<property name="landblockService" ref="landblockService"></property>
+	</bean>
+    <bean id="landchangeinfoAction" class="com.APPSys.action.LandchangeinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="landchangeinfoService"></property>
+		<property name="landchangeinfoService" ref="landchangeinfoService"></property>
+	</bean>
+    <bean id="landownerinfoAction" class="com.APPSys.action.LandownerinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="landownerinfoService"></property>
+		<property name="landownerinfoService" ref="landownerinfoService"></property>
+	</bean>
+    <bean id="landseaAction" class="com.APPSys.action.LandseaAction"
+		scope="prototype">
+		<property name="commonService" ref="landseaService"></property>
+		<property name="landseaService" ref="landseaService"></property>
+	</bean>
+    <bean id="landsurveryAction" class="com.APPSys.action.LandsurveryAction"
+		scope="prototype">
+		<property name="commonService" ref="landsurveryService"></property>
+		<property name="landsurveryService" ref="landsurveryService"></property>
+	</bean>
+    <bean id="landuseinfoAction" class="com.APPSys.action.LanduseinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="landuseinfoService"></property>
+		<property name="landuseinfoService" ref="landuseinfoService"></property>
+	</bean>
+    <bean id="layerfieldAction" class="com.APPSys.action.LayerfieldAction"
+		scope="prototype">
+		<property name="commonService" ref="layerfieldService"></property>
+		<property name="layerfieldService" ref="layerfieldService"></property>
+	</bean>
+    <bean id="layerfldtypeAction" class="com.APPSys.action.LayerfldtypeAction"
+		scope="prototype">
+		<property name="commonService" ref="layerfldtypeService"></property>
+		<property name="layerfldtypeService" ref="layerfldtypeService"></property>
+	</bean>
+    <bean id="layertypeAction" class="com.APPSys.action.LayertypeAction"
+		scope="prototype">
+		<property name="commonService" ref="layertypeService"></property>
+		<property name="layertypeService" ref="layertypeService"></property>
+	</bean>
+    <bean id="lbusedetailAction" class="com.APPSys.action.LbusedetailAction"
+		scope="prototype">
+		<property name="commonService" ref="lbusedetailService"></property>
+		<property name="lbusedetailService" ref="lbusedetailService"></property>
+	</bean>
+    <bean id="limitinfoAction" class="com.APPSys.action.LimitinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="limitinfoService"></property>
+		<property name="limitinfoService" ref="limitinfoService"></property>
+	</bean>
+    <bean id="mainlayerAction" class="com.APPSys.action.MainlayerAction"
+		scope="prototype">
+		<property name="commonService" ref="mainlayerService"></property>
+		<property name="mainlayerService" ref="mainlayerService"></property>
+	</bean>
+    <bean id="maintenanceAction" class="com.APPSys.action.MaintenanceAction"
+		scope="prototype">
+		<property name="commonService" ref="maintenanceService"></property>
+		<property name="maintenanceService" ref="maintenanceService"></property>
+	</bean>
+    <bean id="maintenance_printAction" class="com.APPSys.action.Maintenance_printAction"
+		scope="prototype">
+		<property name="commonService" ref="maintenance_printService"></property>
+		<property name="maintenance_printService" ref="maintenance_printService"></property>
+	</bean>
+    <bean id="midlayerAction" class="com.APPSys.action.MidlayerAction"
+		scope="prototype">
+		<property name="commonService" ref="midlayerService"></property>
+		<property name="midlayerService" ref="midlayerService"></property>
+	</bean>
+    <bean id="newsinfoAction" class="com.APPSys.action.NewsinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="newsinfoService"></property>
+		<property name="newsinfoService" ref="newsinfoService"></property>
+	</bean>
+    <bean id="newstypeAction" class="com.APPSys.action.NewstypeAction"
+		scope="prototype">
+		<property name="commonService" ref="newstypeService"></property>
+		<property name="newstypeService" ref="newstypeService"></property>
+	</bean>
+    <bean id="otherrightinfoAction" class="com.APPSys.action.OtherrightinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="otherrightinfoService"></property>
+		<property name="otherrightinfoService" ref="otherrightinfoService"></property>
+	</bean>
+    <bean id="oweandcerchangeAction" class="com.APPSys.action.OweandcerchangeAction"
+		scope="prototype">
+		<property name="commonService" ref="oweandcerchangeService"></property>
+		<property name="oweandcerchangeService" ref="oweandcerchangeService"></property>
+	</bean>
+    <bean id="ownandcaseAction" class="com.APPSys.action.OwnandcaseAction"
+		scope="prototype">
+		<property name="commonService" ref="ownandcaseService"></property>
+		<property name="ownandcaseService" ref="ownandcaseService"></property>
+	</bean>
+    <bean id="ownandforestsurAction" class="com.APPSys.action.OwnandforestsurAction"
+		scope="prototype">
+		<property name="commonService" ref="ownandforestsurService"></property>
+		<property name="ownandforestsurService" ref="ownandforestsurService"></property>
+	</bean>
+    <bean id="ownandhousesurAction" class="com.APPSys.action.OwnandhousesurAction"
+		scope="prototype">
+		<property name="commonService" ref="ownandhousesurService"></property>
+		<property name="ownandhousesurService" ref="ownandhousesurService"></property>
+	</bean>
+    <bean id="ownandlandsurAction" class="com.APPSys.action.OwnandlandsurAction"
+		scope="prototype">
+		<property name="commonService" ref="ownandlandsurService"></property>
+		<property name="ownandlandsurService" ref="ownandlandsurService"></property>
+	</bean>
+    <bean id="ownandstrsurAction" class="com.APPSys.action.OwnandstrsurAction"
+		scope="prototype">
+		<property name="commonService" ref="ownandstrsurService"></property>
+		<property name="ownandstrsurService" ref="ownandstrsurService"></property>
+	</bean>
+    <bean id="ownersAction" class="com.APPSys.action.OwnersAction"
+		scope="prototype">
+		<property name="commonService" ref="ownersService"></property>
+		<property name="ownersService" ref="ownersService"></property>
+	</bean>
+    <bean id="ownproandcaseAction" class="com.APPSys.action.OwnproandcaseAction"
+		scope="prototype">
+		<property name="commonService" ref="ownproandcaseService"></property>
+		<property name="ownproandcaseService" ref="ownproandcaseService"></property>
+	</bean>
+    <bean id="pledgeinfoAction" class="com.APPSys.action.PledgeinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="pledgeinfoService"></property>
+		<property name="pledgeinfoService" ref="pledgeinfoService"></property>
+	</bean>
+    <bean id="prereginfoAction" class="com.APPSys.action.PrereginfoAction"
+		scope="prototype">
+		<property name="commonService" ref="prereginfoService"></property>
+		<property name="prereginfoService" ref="prereginfoService"></property>
+	</bean>
+    <bean id="procprojectAction" class="com.APPSys.action.ProcprojectAction"
+		scope="prototype">
+		<property name="commonService" ref="procprojectService"></property>
+		<property name="procprojectService" ref="procprojectService"></property>
+	</bean>
+    <bean id="pubareashareAction" class="com.APPSys.action.PubareashareAction"
+		scope="prototype">
+		<property name="commonService" ref="pubareashareService"></property>
+		<property name="pubareashareService" ref="pubareashareService"></property>
+	</bean>
+    <bean id="pubbldsurveryAction" class="com.APPSys.action.PubbldsurveryAction"
+		scope="prototype">
+		<property name="commonService" ref="pubbldsurveryService"></property>
+		<property name="pubbldsurveryService" ref="pubbldsurveryService"></property>
+	</bean>
+    <bean id="publicbuindinginfoAction" class="com.APPSys.action.PublicbuindinginfoAction"
+		scope="prototype">
+		<property name="commonService" ref="publicbuindinginfoService"></property>
+		<property name="publicbuindinginfoService" ref="publicbuindinginfoService"></property>
+	</bean>
+    <bean id="realestatebookAction" class="com.APPSys.action.RealestatebookAction"
+		scope="prototype">
+		<property name="commonService" ref="realestatebookService"></property>
+		<property name="realestatebookService" ref="realestatebookService"></property>
+	</bean>
+    <bean id="realestatecardAction" class="com.APPSys.action.RealestatecardAction"
+		scope="prototype">
+		<property name="commonService" ref="realestatecardService"></property>
+		<property name="realestatecardService" ref="realestatecardService"></property>
+	</bean>
+    <bean id="realestateproofAction" class="com.APPSys.action.RealestateproofAction"
+		scope="prototype">
+		<property name="commonService" ref="realestateproofService"></property>
+		<property name="realestateproofService" ref="realestateproofService"></property>
+	</bean>
+    <bean id="realestaterightAction" class="com.APPSys.action.RealestaterightAction"
+		scope="prototype">
+		<property name="commonService" ref="realestaterightService"></property>
+		<property name="realestaterightService" ref="realestaterightService"></property>
+	</bean>
+    <bean id="realestateunitAction" class="com.APPSys.action.RealestateunitAction"
+		scope="prototype">
+		<property name="commonService" ref="realestateunitService"></property>
+		<property name="realestateunitService" ref="realestateunitService"></property>
+	</bean>
+    <bean id="realnumtempAction" class="com.APPSys.action.RealnumtempAction"
+		scope="prototype">
+		<property name="commonService" ref="realnumtempService"></property>
+		<property name="realnumtempService" ref="realnumtempService"></property>
+	</bean>
+    <bean id="recandappformAction" class="com.APPSys.action.RecandappformAction"
+		scope="prototype">
+		<property name="commonService" ref="recandappformService"></property>
+		<property name="recandappformService" ref="recandappformService"></property>
+	</bean>
+    <bean id="recdataAction" class="com.APPSys.action.RecdataAction"
+		scope="prototype">
+		<property name="commonService" ref="recdataService"></property>
+		<property name="recdataService" ref="recdataService"></property>
+	</bean>
+    <bean id="recfeeformAction" class="com.APPSys.action.RecfeeformAction"
+		scope="prototype">
+		<property name="commonService" ref="recfeeformService"></property>
+		<property name="recfeeformService" ref="recfeeformService"></property>
+	</bean>
+    <bean id="regbooklistAction" class="com.APPSys.action.RegbooklistAction"
+		scope="prototype">
+		<property name="commonService" ref="regbooklistService"></property>
+		<property name="regbooklistService" ref="regbooklistService"></property>
+	</bean>
+    <bean id="regioncodeAction" class="com.APPSys.action.RegioncodeAction"
+		scope="prototype">
+		<property name="commonService" ref="regioncodeService"></property>
+		<property name="regioncodeService" ref="regioncodeService"></property>
+	</bean>
+    <bean id="reuandcaseAction" class="com.APPSys.action.ReuandcaseAction"
+		scope="prototype">
+		<property name="commonService" ref="reuandcaseService"></property>
+		<property name="reuandcaseService" ref="reuandcaseService"></property>
+	</bean>
+    <bean id="roomchangeinfoAction" class="com.APPSys.action.RoomchangeinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="roomchangeinfoService"></property>
+		<property name="roomchangeinfoService" ref="roomchangeinfoService"></property>
+	</bean>
+    <bean id="seachangeinfoAction" class="com.APPSys.action.SeachangeinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="seachangeinfoService"></property>
+		<property name="seachangeinfoService" ref="seachangeinfoService"></property>
+	</bean>
+    <bean id="sealupinfoAction" class="com.APPSys.action.SealupinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="sealupinfoService"></property>
+		<property name="sealupinfoService" ref="sealupinfoService"></property>
+	</bean>
+    <bean id="seauseinfoAction" class="com.APPSys.action.SeauseinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="seauseinfoService"></property>
+		<property name="seauseinfoService" ref="seauseinfoService"></property>
+	</bean>
+    <bean id="struownerinfoAction" class="com.APPSys.action.StruownerinfoAction"
+		scope="prototype">
+		<property name="commonService" ref="struownerinfoService"></property>
+		<property name="struownerinfoService" ref="struownerinfoService"></property>
+	</bean>
+    <bean id="strusurveryAction" class="com.APPSys.action.StrusurveryAction"
+		scope="prototype">
+		<property name="commonService" ref="strusurveryService"></property>
+		<property name="strusurveryService" ref="strusurveryService"></property>
+	</bean>
+    <bean id="sublayerAction" class="com.APPSys.action.SublayerAction"
+		scope="prototype">
+		<property name="commonService" ref="sublayerService"></property>
+		<property name="sublayerService" ref="sublayerService"></property>
+	</bean>
+    <bean id="subregcodeAction" class="com.APPSys.action.SubregcodeAction"
+		scope="prototype">
+		<property name="commonService" ref="subregcodeService"></property>
+		<property name="subregcodeService" ref="subregcodeService"></property>
+	</bean>
+    <bean id="surapprovalAction" class="com.APPSys.action.SurapprovalAction"
+		scope="prototype">
+		<property name="commonService" ref="surapprovalService"></property>
+		<property name="surapprovalService" ref="surapprovalService"></property>
+	</bean>
+    <bean id="useseastatusAction" class="com.APPSys.action.UseseastatusAction"
+		scope="prototype">
+		<property name="commonService" ref="useseastatusService"></property>
+		<property name="useseastatusService" ref="useseastatusService"></property>
+	</bean>
+</beans>
+
